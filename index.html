@@ -183,28 +183,44 @@ The supplementary material details the parameters for sphere-based camera view a
         <!-- Your image here -->
         <img src="static/images/grasp_rendering_pipeline.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          Grasp Generation (blue) and Rendering Pipeline (red): The process begins
+          with a MANO hand model initialization and a BPS-encoded Voluson model point
+          cloud. CoarseNet generates initial hand poses, further refined by RefineNet for
+          precise hand-probe alignment. In the rendering phase, the optimized hand pose,
+          model vertices, and a SMPL-H model are processed in Blender. Using a multi-
+          viewpoint camera via a spherical layout and centered on the hand and arm,
+          several textures and backgrounds are applied for diverse RGB-D, segmentation
+          maps, and annotations.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/grasp_conversion_and_sphere_concept.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
+          (a) Schematic grasp conversion from generative model to rendering soft-
+          ware, including probe offset (&Delta;<sub>z</sub>) correction. (b) Grasp rendering overview: (1)
+          SMPL-H body model grasping the probe, showing egocentric and non-egocentric
+          views. (2) Right arm and sphere-based camera orientations with remaining
+          SMPL-H body parts hidden. (3) Camera angle sphere concept with views at
+          various latitudes, centered on hand mesh; defines sphere (r<sub>sphr</sub>) and circle (r<sub>circ</sub>)
+          radii. (4) Rendered hand-probe scene example from a sphere camera position.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/rendered_images.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-         Third image description.
+          Sample frames from the HUP-3D dataset, grouped columnwise, from left
+          to right: RGB, depth, segmentation map, and ground truth annotations.
        </h2>
      </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <img src="static/images/qualitative_results.jpg" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
-        Fourth image description.
+        Qualitative results, shown with 4 test images from HUP-3D: image
+columns from left to right: RGB, predicted hand joints, predicted probe cor-
+ners, predicted joints and corners, ground truth of joints and corners.
       </h2>
     </div>
   </div>
